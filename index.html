@@ -10,6 +10,49 @@
 </head>
 <body>
 
+<div class="correct-answer hidden">
+    <div class="container">Молодец, правильно !</div>
+</div>
+<div class="wrong-answer hidden">
+    <div class="container"></div>
+</div>
+
+<main>
+    <article class="main-window">
+        <div class="container">
+            <ul class="main-window__buttons">
+                <li class="main-window__button">
+                    <button>Викторина 1</button>
+                </li>
+                <li class="main-window__button">
+                    <button>Викторина 2</button>
+                </li>
+                <li class="main-window__button">
+                    <button>Викторина 3</button>
+                </li>
+                <li class="main-window__button">
+                    <button>Викторина 4</button>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="quiz quiz-one hidden">
+        <div class="quiz__question">
+            <div class="quiz__desc">Html это ?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Hyper Text Language"> Hyper Text Language</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="TextHyper Markup"> TextHyper Markup</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="HyperText Language Markup"> HyperText Language Markup</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="HyperText Markup Language"> HyperText Markup Language</li>
+            </ul>
+        </div>
+        <div>
+            <button class="quiz__next-btn">Далее</button>
+            <div class="quiz__progress-bar"><div></div></div>
+        </div>
+    </article>
+</main>
+
 <script src="js/main.js"></script>
 </body>
 </html>

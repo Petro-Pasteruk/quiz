@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-window.hidden,
+.quiz__question.hidden,
+.correct-answer.hidden,
+.wrong-answer.hidden,
+.quiz.hidden {
+    display: none;
+}
+
+.correct-answer,
+.wrong-answer {
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct-answer {
+    background: green;
+}
+
+.wrong-answer {
+    background: red;
+}
+
+.main-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-window__buttons {
+    list-style: none;
+}
+
+.main-window__button {
+    width: 75vw;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.main-window__button > button {
+    background: #00ab75;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px 0;
+}
+
+.quiz {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.quiz__desc {
+    margin: 15px auto 20px auto;
+    width: 95vw;
+    padding: 20px 15px;
+    background: #00ab75;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.quiz__answers {
+    list-style: none;
+    padding-left: 25px;
+}
+
+.quiz__answer {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.quiz__next-btn {
+    width: 95vw;
+    border: none;
+    background: #00ab75;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto 10px auto;
+    padding: 8px 0;
+}
+
+.quiz__progress-bar {
+    width: 95vw;
+    height: 3px;
+    margin: 0 auto;
+}
+
+.quiz__progress-bar > div {
+    width: 50%;
+    height: 100%;
+    border-radius: 3px;
+    background: #00ab75;
+}
+
+@media (max-width: 810px) {
+    .container {
+        padding: 0 10px;
+    }
+}
