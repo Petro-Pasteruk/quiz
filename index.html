@@ -16,39 +16,253 @@
 <div class="wrong-answer hidden">
     <div class="container"></div>
 </div>
+<div class="quiz-statistics hidden">
+    <div class="container">
+        <div class="quiz-statistics__header">Поздравляем! <br/> Вы закончили!</div>
+        <div class="quiz-statistics__center">Ваш результат:</div>
+        <div class="quiz-statistics__correct"></div>
+        <div class="quiz-statistics__wrong"></div>
+        <button class="quiz-statistics__home-btn">На главную.</button>
+    </div>
+</div>
 
 <main>
     <article class="main-window">
         <div class="container">
             <ul class="main-window__buttons">
                 <li class="main-window__button">
-                    <button>Викторина 1</button>
+                    <button><img src="img/stoloto.png" alt="stoloto icon"> Столото</button>
                 </li>
                 <li class="main-window__button">
-                    <button>Викторина 2</button>
+                    <button><img src="img/winners.png" alt="winners icon"> Выиграши</button>
                 </li>
                 <li class="main-window__button">
-                    <button>Викторина 3</button>
+                    <button><img src="img/stories.png" alt="stories icon"> Истории</button>
                 </li>
                 <li class="main-window__button">
-                    <button>Викторина 4</button>
+                    <button><img src="img/lottery_world.png" alt="lottery world icon"> Лотереи мира</button>
                 </li>
             </ul>
         </div>
     </article>
-    <article class="quiz quiz-one hidden">
+    <article class="quiz hidden">
         <div class="quiz__question">
-            <div class="quiz__desc">Html это ?</div>
+            <div class="quiz__desc">Какой лотереи не содержиться в Столото?</div>
             <ul class="quiz__answers">
-                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Hyper Text Language"> Hyper Text Language</li>
-                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="TextHyper Markup"> TextHyper Markup</li>
-                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="HyperText Language Markup"> HyperText Language Markup</li>
-                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="HyperText Markup Language"> HyperText Markup Language</li>
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Русское Лото"> Русское Лото</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Зодиак"> Зодиак</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Золотая подкова"> Золотая подкова</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Дуєль"> Дуєль</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Спортлото 666"> Спортлото 666<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Джокер"> Джокер</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Размер самого большого приза в Столото?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Ноль"> Ноль</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Десять миллионов"> Десять миллионов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Сто миллионов"> Сто миллионов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Миллиард"> Миллиард<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Десять Миллиардов"> Десять Миллиардов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Сто Миллиардов"> Сто Миллиардов</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Все победители в Столото анонимны?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Да, все победители скрытние"> Да, все победители скрытние</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Десять миллионов"> Десять миллионов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="У ных берут интервью, но они могут отказаться"> У ных берут интервью, но они могут отказаться<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Нет, о них обезательно рассказывают"> Нет, о них обезательно рассказывают</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Нет, с ними проведут допрос"> Нет, с ними проведут допрос</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">В какой лотереи от Столото самые быстрые выигрыши?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Спортлото"> Спортлото</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Жилищная лотерея"> Жилищная лотерея</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Золотая подкова"> Золотая подкова</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Русское Лото"> Русское Лото</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Зодиак"> Зодиак</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Дуэль"> Дуэль<div class="right-answer">(+)</div></li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">В Спортлото запрещено иметь больше 1 билета ?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Да, это нарушение"> Да, это нарушение</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Можно"> Можно<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Запрещено только билеты из одного тиража"> Запрещено только билеты из одного тиража</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Любые билеты запрещены"> Любые билеты запрещены</li>
             </ul>
         </div>
         <div>
             <button class="quiz__next-btn">Далее</button>
-            <div class="quiz__progress-bar"><div></div></div>
+            <div class="quiz__progress-bar"></div>
+        </div>
+    </article>
+    <article class="quiz hidden">
+        <div class="quiz__question">
+            <div class="quiz__desc">В какой стране самые большие выиграши?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="США"> США<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Европа"> Европа</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Россия"> Россия</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Китай"> Китай</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Дубай (Город)"> Дубай (Город)</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">В каких тиражах в России самые большие джекпоты?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Русское Лото"> Русское Лото<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Спортлото"> Спортлото</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Рапидо"> Рапидо</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Золотая подкова"> Золотая подкова</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Жилищная лотерея"> Жилищная лотерея</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Каким способом выдают выиграш?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Квартирами"> Квартирами</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Чемоданами с купюрами"> Чемоданами с купюрами</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Золотом"> Золотом</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Зависит от лотереи, обычно перевод на счёт или наличными"> Зависит от лотереи, обычно перевод на счёт или наличными<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Обещаниями"> Обещаниями</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">С большим выиграшем приходит:</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Большая ответственность"> Большая ответственность</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Сумма"> Сумма</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Любой ответ"> Любой ответ<div class="right-answer">(+)</div></li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Перед тем, как поехать забирать выиграш, нужно:</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Вооружиться"> Вооружиться</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Рассказать друзьям"> Рассказать друзьям</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Планировать расходы"> Планировать расходы</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Убедится, что на самом деле выиграли"> Убедится, что на самом деле выиграли<div class="right-answer">(+)</div></li>
+            </ul>
+        </div>
+        <div>
+            <button class="quiz__next-btn">Далее</button>
+            <div class="quiz__progress-bar"></div>
+        </div>
+    </article>
+    <article class="quiz hidden">
+        <div class="quiz__question">
+            <div class="quiz__desc">Какой рекорд скорости потраченного джекпота?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="10 лет"> 10 лет</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="5 лет"> 5 лет</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="3 года"> 3 года</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Менее 1 года"> Менее 1 года<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Сразу"> Сразу</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Бывало ли, что за супер-призом никто не пришёл?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Всегда"> Всегда</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Через раз"> Через раз</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Бывает"> Бывает<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Никогда"> Никогда</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Бывало ли, что после выиграша остались в долге за неуплаченный налог?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Да, бывает, но зависит от страны"> Да, бывает, но зависит от страны<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Налогом не облагаются"> Налогом не облагаются</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Налог 100%"> Налог 100%</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Были ли банкроты после победы супер-приза в лотерею?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Не получиться, выиграш слишком большой"> Не получиться, выиграш слишком большой</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Нет, у этих людей есть аура везения"> Нет, у этих людей есть аура везения</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Бывает"> Бывает<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Они выиграют ещё раз"> Они выиграют ещё раз</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Состояние после выиграша может вырасти ещё больше?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Да, если правильно вложить средства"> Да, если правильно вложить средства<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Нет, выиграш можно только потратить"> Нет, выиграш можно только потратить</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Только если вложить весь выиграш на покупку новых билетов"> Только если вложить весь выиграш на покупку новых билетов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Нет, победителю уже достаточно"> Нет, победителю уже достаточно</li>
+            </ul>
+        </div>
+        <div>
+            <button class="quiz__next-btn">Далее</button>
+            <div class="quiz__progress-bar"></div>
+        </div>
+    </article>
+    <article class="quiz hidden">
+        <div class="quiz__question">
+            <div class="quiz__desc">Какого названия лотереи не существует?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Русское Лото"> Русское Лото</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Бинго"> Бинго</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Euromillions"> Euromillions</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Джокер"> Джокер</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Все существуют"> Все существуют<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Ничего не существует"> Ничего не существует</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Что из этого обычно не разыгрывают?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Деньги"> Деньги</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Недвижимость"> Недвижимость</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Самолёты"> Самолёты<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Автомобили"> Автомобили</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="iPhone"> iPhone</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Путешествия"> Путешествия</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Удачу"> Удачу</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Можно ли заработать, если купить все билеты?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Да, выиграш больше, чем цена всех билетов"> Да, выиграш больше, чем цена всех билетов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Нет, обычно выиграш меньше"> Нет, обычно выиграш меньше<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Нельзя зарабатывать"> Нельзя зарабатывать</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Рекорд размера джекпота?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Более нуля"> Более нуля</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Более Миллиона долларов"> Более Миллиона долларов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Более Десяти миллионов долларов"> Более Десяти миллионов долларов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Более Сотни миллионов долларов"> Более Сотни миллионов долларов</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Более Миллиарда долларов"> Более Миллиарда долларов<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Более Триллиона долларов"> Более Триллиона долларов</li>
+            </ul>
+        </div>
+        <div class="quiz__question">
+            <div class="quiz__desc">Что происходит если Вы выиграли, но бумажный билет утрачен?</div>
+            <ul class="quiz__answers">
+                <li class="quiz__answer"><input name="html" checked type="radio" class="quiz__checkbox" value="Для получения достаточно только запомнить номер"> Для получения достаточно только запомнить номер</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Всё в порядке, он регистрируеться на имя покупателя"> Всё в порядке, он регистрируеться на имя покупателя</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Получить выиграш невозможно"> Получить выиграш невозможно<div class="right-answer">(+)</div></li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Нужно подать в суд и взыскать штраф"> Нужно подать в суд и взыскать штраф</li>
+                <li class="quiz__answer"><input name="html" type="radio" class="quiz__checkbox" value="Напечатать новый"> Напечатать новый</li>
+            </ul>
+        </div>
+        <div>
+            <button class="quiz__next-btn">Далее</button>
+            <div class="quiz__progress-bar"></div>
         </div>
     </article>
 </main>
