@@ -122,7 +122,6 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-bottom: 10px;
 }
 
@@ -139,6 +138,7 @@
 .quiz__answers {
     list-style: none;
     padding-left: 25px;
+    margin-bottom: 30px;
 }
 
 .quiz__answer {
