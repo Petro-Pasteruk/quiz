@@ -3,7 +3,9 @@ function toggleQuestions (question) {
     const allQuestions = document.querySelectorAll(".quiz__question");
     for (let i = 0; i < allQuestions.length; i++) {
         if (allQuestions[i] === question) {
-            allQuestions[i+1].classList.remove("hidden");
+            if (allQuestions[i+1]) {
+                allQuestions[i+1].classList.remove("hidden");
+            }
         }
     }
 }
@@ -26,7 +28,7 @@ function notificationNotCorrectAnswer (question, notificationText) {
     document.querySelector(".wrong-answer").querySelector(".container").innerHTML = "Неправильно. <br/>" + "Верный ответ это: " + notificationText;
     setTimeout(() => {
         document.querySelector(".wrong-answer").classList.add("hidden");
-    }, 1500);
+    }, 2500);
 
     toggleQuestions(question);
 }
