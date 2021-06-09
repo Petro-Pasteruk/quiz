@@ -25,10 +25,10 @@ function notificationCorrectAnswer (question) {
 function notificationNotCorrectAnswer (question, notificationText) {
     question.classList.add("hidden");
     document.querySelector(".wrong-answer").classList.remove("hidden");
-    document.querySelector(".wrong-answer").querySelector(".container").innerHTML = "Неправильно. <br/>" + "Верный ответ это: " + notificationText;
+    document.querySelector(".wrong-answer").querySelector(".container").innerHTML = "Неправильно. <br/>" + "Верный ответ: " + notificationText;
     setTimeout(() => {
         document.querySelector(".wrong-answer").classList.add("hidden");
-    }, 2500);
+    }, 3000);
 
     toggleQuestions(question);
 }
